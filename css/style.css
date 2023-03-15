@@ -1,0 +1,272 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro',"Roboto", Arial, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  width: 100%;
+  max-width: 1150px;
+  min-width: 768px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  position: relative;
+
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+
+  color: white;
+  background-color: #00bce8;
+}
+
+.header-logo::before {
+  content: "Авторизованный сервисный центр";
+  position: absolute;
+  top: -12px;
+
+  font-size: 10px;
+  letter-spacing: 0px;
+  color: #757575;
+  text-transform: none;
+}
+
+.header-logo::after {
+  content: "Работаем с 1991 года";
+  position: absolute;
+  bottom: -12px;
+
+  font-size: 10px;
+  letter-spacing: 0px;
+  color: #757575;
+  text-transform: none;
+}
+
+.header-logo span::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: -30px;
+  width: 60px;
+  height: 60px;
+  opacity: 0.9;
+  background-image: url("../img/30.png");
+  background-size: cover;
+  transform: rotate(-30deg);
+}
+.header-services {
+  width: 80%;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 20px;
+}
+
+.header-services_list {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.header-services_list-item {
+  margin-left: 60px;
+}
+
+.header-services_list-item ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.services_list-main_tel {
+  position: relative;
+  font-size: 29px;
+}
+
+.services_list-main_tel::before {
+  content: "8 (812)";
+  position: absolute;
+  top: -20px;
+  right: 0;
+  font-size: 16px;
+}
+
+.services_list-sec_tel {
+  position: relative;
+  top: -5px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.services_list-adress a {
+  font-size: 14px;
+  font-weight: normal;
+
+  color: #089bbc;
+  border-bottom: 1.7px dashed #0cacd0;
+}
+
+.services_list-metro {
+  margin-top: 7px;
+
+  font-size: 14px;
+}
+
+.services_list-work {
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.header-services_list-item ul li {
+  position: relative;
+}
+
+.header-services_list-item ul li:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -18px;
+  width: 15px;
+  height: 15px;
+  background-image: url("https://orbis.spb.ru/image/spb_metro_line2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;https://orbis.spb.ru/image/spb_metro_line4.jpg
+}
+
+.header-services_list-item:first-child li:nth-child(4)::before {
+  background-image: url("https://orbis.spb.ru/image/spb_metro_line4.jpg");
+}
+
+.header-services_list-item:last-child li:nth-child(4)::before {
+  background-image: none;
+}
+
+.header-menu {
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+
+.header-menu_list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu_list-item a {
+  display: block;
+  padding: 5px 10px;
+  color: #777777;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: color 0.5s;
+}
+
+.header-menu_list-item {
+  border-radius: 5px;
+}
+
+.header-menu_list-item:hover {
+  background-color: #00bce8;
+}
+
+.header-menu_list-item a:hover {
+  color: white;
+}
+
+/* main page content */
+
+.main_page-wrapper {
+  width: 100%;
+  max-width: 1150px;
+  min-width: 768px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main_page-content {
+  width: 70%;
+
+}
+
+.main_page-promo_header {
+  padding: 0 30px;
+}
+
+.main_page-promo_header h1 {
+  text-align: center;
+  color: #00bce8;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.main_page-promo_text h2 {
+  text-align: center;
+  font-family: 20px;
+}
+
+.main_page-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.main_page-table tr {
+  border-top: 1px solid #eee;
+  margin-bottom: 40px;
+}
+
+.main_page-table td {
+  padding: 32px 32px;
+}
+
+.main_page-table img {
+  display: block;
+  margin: 0 auto;
+}
+
+.main_page-table div {
+  font-size: 14px;
+}
+
+/* main page aside starts here */
+
+.main_page-aside {
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
